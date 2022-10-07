@@ -1,0 +1,15 @@
+.miClass {
+  background: #0011ff;
+  color: rgb(25, 150, 252);
+  padding: 10px;
+  width: 30%;
+  border: 3px groove #7e86f5;
+  transition: 1s all;
+}
+li {
+  list-style: none;
+}
+li[data-select="true"]:not(.miClass) {
+  background: #beadd0;
+  width: 30%;
+}

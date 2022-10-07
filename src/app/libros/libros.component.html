@@ -1,0 +1,11 @@
+<div class="container" role="document">
+  <ul>
+    <li *ngFor="let libro of libros; index as indice">
+      <a (click)="agregarLibro(libro)" routerLink="'/informacion']">{{
+        libro.titulo
+      }}</a>
+    </li>
+  </ul>
+  <div *ngIf="errorHttp">Hay un error al cargar...</div>
+  <div *ngIf="cargando" class="loader"></div>
+</div>
